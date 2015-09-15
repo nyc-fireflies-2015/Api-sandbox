@@ -7,6 +7,9 @@
   <title></title>
 </head>
 <body ng-controller="myCtrl">
-  <button>Get some reddit stuff</button>
+  <h1>List of recent reddit posts!</h1>
+  <ul>
+    <li ng-repeat="post in posts">{{post.data.title}}</li>
+  </ul>
 </body>
 </html>
