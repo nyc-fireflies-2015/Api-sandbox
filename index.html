@@ -9,7 +9,9 @@
 <body ng-controller="myCtrl">
   <h1>List of recent reddit posts!</h1>
   <ul>
-    <li ng-repeat="post in posts">{{post.data.title}}</li>
+    <li ng-repeat="post in posts">
+      <img src={{post.data.thumbnail}}><a href={{post.data.url}}>{{post.data.title}}</a> by: {{post.data.author}}
+    </li>
   </ul>
 </body>
 </html>
